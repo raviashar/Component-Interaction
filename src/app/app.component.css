@@ -1,0 +1,7 @@
+.content-area { height: 100%; }
+.toolbar-nav { display: none; }
+.side-nav { padding: 20px 10px; }
+.side-nav a { display: block; min-width: 180px; text-align: left; margin-bottom: 10px; }
+.side-nav a:last-child { margin: 0; }
+.side-nav a:hover .mat-button-focus-overlay, .side-nav a.active { background-color: #E8E8E8 !important; border-radius: 0; opacity: 1 !important; }
+.side-bar-content { height: calc(100% - 104px); padding: 20px; }

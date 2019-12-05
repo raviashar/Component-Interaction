@@ -1,0 +1,8 @@
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Search" name="search" [(ngModel)]="searchData" autocomplete="off" />
+</mat-form-field>
+
+<mat-radio-group aria-label="Select an option" *ngIf="isRadioVisible" >
+  <mat-radio-button value="Web Designer" (change)="radioChange($event)">Web Designer</mat-radio-button>
+  <mat-radio-button value="Web Developer" (change)="radioChange($event)">Web Developer</mat-radio-button>
+</mat-radio-group>

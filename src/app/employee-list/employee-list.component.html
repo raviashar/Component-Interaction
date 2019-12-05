@@ -1,0 +1,30 @@
+
+<div class="table-head">
+  <div class="table-row flex-dis flex-wrap flex-v-center flex-h-center">
+    <div class="table-list flex-1">Name </div>
+    <div class="table-list flex-1">Designation </div>
+    <div class="table-list flex-1">Organization </div>
+    <div class="table-list flex-1">Salary</div>
+    <div class="table-list flex-1">Location</div>
+  </div>
+</div>
+
+<div class="table-body">
+  <div class="table-row flex-dis flex-wrap flex-v-center flex-h-center" *ngFor="let emplyee of (employeeList | searchFilter : radioData:searchData)">
+    <div class="table-list flex-1">
+      <div>{{emplyee.name}}</div>
+    </div>
+    <div class="table-list flex-1">
+      <div>{{emplyee.designation}}</div>
+    </div>
+    <div class="table-list flex-1">
+      <div>{{emplyee.organization}}</div>
+    </div>
+    <div class="table-list flex-1">
+      <div>{{emplyee.salary}}</div>
+    </div>
+    <div class="table-list flex-1">
+      <div>{{emplyee.location}}</div>
+    </div>
+  </div>
+</div>
